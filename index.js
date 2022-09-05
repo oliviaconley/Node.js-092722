@@ -4,7 +4,7 @@ const fs = require('fs');
 const generateReadme = (answers) => 
 `# ${answers.title}
 
-## ${answers.description}
+${answers.description}
     
 ## Table of Contents 
 * [Installation](#installation)
@@ -30,8 +30,8 @@ ${answers.contributing}
 ${answers.tests}
 
 ## Questions
-${answers.github}
-${answers.email}`
+* GitHub: ${answers.github}
+* Email: ${answers.email}`
 
 
 inquirer.prompt([
